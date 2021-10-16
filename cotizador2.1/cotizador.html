@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cotizador.css">
+</head>
+
+<body>
+
+    <div class="cot-container">
+        <nav class="cot-nav">
+            <ul class="cot-list">
+                <li class="cot-li">
+                    <a class="cot-nav-slc" href="">INICIO</a>
+                </li>
+                <span></span>
+                <li class="cot-li">
+                    <a class="cot-nav-slc" href="">COTIZAR</a>
+                </li>
+                <span></span>
+                <li class="cot-li">
+                    <a class="cot-nav-nav" href="">
+                        <img src="/img/Logo-2.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="cot-block">
+            <h1>COTIZADOR</h1>
+            <p>Por favor complete las siguientes casillas, para generar la cotizaci'on de su servicio.</p>
+            <p>Gracias!</p>
+            <div class="cot-dat-cont">
+                <div class="cot-dts">
+                    <label class="cot-lbl-d">EMPRESA</label>
+                    <label class="cot-lbl-d">NOMBRE</label>
+                    <label class="cot-lbl-d">GUARDIAS</label>
+                </div>
+
+                <div class="txb-dts">
+                    <input type="text" placeholder="EMPRESA" class="inp-dts">
+                    <input type="text" placeholder="NOMBRE COMPLETO" class="inp-dts">
+                    <select name="" id="" class="inp-dts ctt">
+                        <option value="">-- CANTIDAD DE GUARDIAS --</option>
+                        <option value="2">1</option>
+                        <option value="3">2</option>
+                        <option value="4">3</option>
+                        <option value="5">4</option>
+                        <option value="6">5</option>
+                        <option value="7">6</option>
+                        <option value="8">7</option>
+                        <option value="9">8</option>
+                        <option value="10">9</option>
+                        <option value="11">10</option>
+                        <option value="12">11</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="cot-hr">
+                <label>TURNO</label>
+                <div class="12">
+                    12 HRS <input type="radio" name="plan" value="basico" class="12" id="basico"/>
+                </div>
+                <div class="24">
+                    24 HRS<input type="radio" name="plan" value="basico" class="24" id="basico"/>
+                </div>
+            </div>
+            <p class="anounce">EN CASO DE REQUERIR JEFE DE TURNO O JEFE DE SERVICIO SELECCIONE LA CASILLA CORRESPONDIENTE</p>
+            <div class="cot-boss">
+                <div class="turn">
+                    JEFE DE TURNO <input type="radio" name="plan" value="basico" class="radio" id="basico" />
+                </div>
+                <div class="service">
+                    JEFE DE SERVICIO <input type="radio" name="plan" value="basico" class="radio" id="basico" />
+                </div>
+            </div>
+
+            <a href="https://forms.gle/XzEsyLpESpduSx5c7" class="lnk-cot">Cotizar</a>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
+    <title>Cotizador</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/node-uuid/1.4.8/uuid.min.js"></script>
+    <link rel="stylesheet" href="cotizador.css">
+  <script src="appCotizador.js"></script>
+  </head>
+  <body onload="">
+
+    <div class="container">
+      <header>
+        <h1>Cotizador</h1>
+      </header>
+      <div class="formulario">
+        <form action="">
+          <div id="msj-error-cotizador"></div>
+          <div class="campo">
+            <label>Empresa</label>
+            <select name="marca" id="marca">
+              <option value="">-- Empresa --</option>
+              <option value="Pequegna">Pequegna</option>
+              <option value="Mediana">Mediana</option>
+              <option value="Grande">Grande</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label>Guardias</label>
+            <select name="anio" id="anio">
+
+              <option value="">-- Cantidad de guardias --</option>
+              <option value="2">1</option>
+              <option value="3">2</option>
+              <option value="4">3</option>
+              <option value="5">4</option>
+              <option value="6">5</option>
+              <option value="7">6</option>
+              <option value="8">7</option>
+              <option value="9">8</option>
+              <option value="10">9</option>
+              <option value="11">10</option>
+              <option value="12">11</option>
+            </select>
+          </div>
+
+          <div class="campo">
+
+            <lable>Turno</lable>
+            <input type="radio"
+                    name="plan"
+                    value="basico"
+                    class="radio"
+                    id="basico"
+                  /> 12 hrs
+
+            <input type="radio"
+                    name="plan"
+                    value="completo"
+                    class="radio"
+                    id="completo"
+                  /> 24 hrs
+          </div>
+          <input type="button" onclick="cotizarSeguro()" class="button-primary u-full-width" value="Cotizar">
+        </form>
+        <div class="mensaje" id="msj">Elije marca, año y tipo de seguro</div>
+        <div id="resumen" style="display: none;"></div>
+        <div class="" id="resultado" style="display: none;"></div>
+        
+      </div>
+    </div>
+
+  </body>
+</html>

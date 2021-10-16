@@ -1,0 +1,62 @@
+@import "size";
+@import "colors";
+.bloque2{
+    width: 100%;
+    height: $box;
+    background: $cSrv1;
+    overflow: hidden;
+        
+    .blq2-txt{
+        color: $cWht;
+        width: 100%;
+        text-align: center;
+        text-shadow: 0px 3px black;
+        font-size: 40px;
+        padding-top: 3%;
+        .Ylltxt{
+            color: $cSrv2;
+        }
+    }
+    .blq2-video{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+        height: 300px;
+        margin-top: 3%;
+        border: 1px solid $cWht;
+        color: $cWht;
+        font-size: 50px;
+    }
+    .bl2-shape,
+    .bl2w-shape{
+        width: 300px;
+        height: 300px;
+        border: 2px solid rgb(243, 192, 53);
+        transform: rotate(45deg);
+        margin: {
+            top: -200px;
+            left: -140px;
+        }
+    }
+    .shp-1{
+        margin: {
+            top: -600px;
+            left: 93%;
+        }
+    }
+    .shp-2{
+        border: 2px solid $cWht;
+        margin: {
+            top: 15%;
+            left: -4%;
+        }
+    }
+    .shp-3{
+        border: 2px solid $cWht;
+        margin: {
+            top: -50%;
+            left: 92%;
+        }
+    }
+}

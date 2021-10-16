@@ -1,0 +1,88 @@
+@import "colors";
+@import "size";
+
+h1{
+    text-align: center;
+}
+
+
+.bloque4{
+    width: 100%;
+    height: $box + 180px;
+
+    .bq4-h{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-size: 25px;
+        margin: {
+            top: 3%;
+            bottom: 45px;
+        }
+        
+    }
+    .bq4-body{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 90%;
+        height: 400px;
+        
+        
+        .bq4-contr{
+            width: 40%;
+            color:$cSrv1;
+            height: 200px;   
+            text-align: center;
+            .bq4-num{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 30px;
+                height: 30px;
+                color: $cSrv1;
+                border-radius: 999px;
+                border: 1px solid $cSrv1;
+                position: absolute;
+                margin: {
+                    top: 0%;
+                    left: 12%;
+                }
+            
+            }
+            p{
+                font-weight: bold;
+                letter-spacing: 1px;
+            }
+            
+            .bq4-contrato{
+                width: 100px;
+                transition: 300ms all;
+            }
+            .bq4-contrato:hover{
+                width: 135px;
+            }
+            #pp{
+                width: 115px;
+                padding-bottom: 8px;
+            }
+            #pp:hover{
+                width: 145px;
+            }
+        }
+        .bq4-line{
+            width: 7px;
+            height: 50%;
+            background-color: $cSrv2;
+        }
+    }
+}
+#bq4-process{
+    color:$cSrv1;
+    letter-spacing: 3px;
+    font-size: 80px;
+    width: auto;
+}
+#ultimo3{
+    margin-top: 3%;
+}

@@ -1,0 +1,75 @@
+  .bloqueSegIndus{
+    @include block(100%,hidden,auto,url("img/Fondo Especialistas Lykos.jpg"),#fff);
+    background-attachment: fixed;
+    background-position-y: center;
+  }
+  .textoGrande{
+    padding-top: 4%;
+    font-size: 370%;
+    text-shadow: 2px 2px black;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 3%;
+    letter-spacing: 2px;
+    width:550%;
+  }
+  @mixin titulocBarra($disp:inline-flex,$marleft:0%){
+    display: $disp; 
+    margin-left: $marleft;
+  }
+  @mixin barra ($height:100px,$width:5em,$back:$cSrv2){
+    height:$height;
+    width:$width;
+    background: $back;
+  }
+  #barra{
+    @include barra (430px,8em);
+  }
+  #titulocBarra{
+    @include titulocBarra(inline-flex,25%);
+  }
+  #barra2{
+    @include barra (90px,1em);
+    margin-top: 10%;
+  }
+  #titulocBarra2{
+    @include titulocBarra(inline-flex,12%);
+  }
+  #barra3{
+    @include barra (398px,12px);
+    margin-top: 4%;
+  }
+  #titulocBarra3{
+    @include titulocBarra(inline-flex,9%);
+  }
+  #barra4{
+    @include barra (340px,12px);
+    margin-top: 48px;
+  }
+  #titulocBarra4{
+    @include titulocBarra(inline-flex,9%);
+  }
+  #barra5{
+    @include barra (30px,8px);
+  }
+  .bt-amarillo-2{
+    width: 300px;
+    font-size: 25px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-top: 2%;
+    margin-left: 33%;
+    font-weight: bold;
+    color: $cSrv1;
+    border-radius: 5px;
+    background:$cSrv2;
+    -webkit-transition: 300ms all;
+    transition: 300ms all;
+    letter-spacing: 2px;
+  }
+  .bt-amarillo-2:hover{
+    color:#fff;
+    border: 1px solid $cSrv1;
+    background: $cSrv1;
+  }

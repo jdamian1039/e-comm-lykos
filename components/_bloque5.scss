@@ -1,0 +1,68 @@
+@import "colors";
+@import "size";
+
+.bloque5{
+
+    height: 800px;
+    background-image: url('img/Guardia con celular Lykos final.jpg');
+    background-attachment: fixed;
+    background-size: 100%;
+    color: $cWht;
+    .blq5-sct{
+        width: 60%;
+        height: 400px;
+        padding-top: 30px;
+        margin-left: 0px;
+        
+        font-size: 33px;
+        
+        .blq5-cot{
+            font-size: 60px;
+            font-weight: bolder;
+            width: auto;
+            letter-spacing: 8px;
+            text-align: left;
+            text-shadow: 2px 2px black;
+            margin: {
+                top: 10%;
+                left:9%;
+                bottom: 5%;
+            }
+            
+        }
+        .blq5-rec{
+            width: 73%;
+            border-left: 15px solid $cSrv2; 
+            margin: {
+                top: 8%;
+                left: 10%;
+                bottom: 8%;
+            }
+            padding-left: 1%;
+            
+        }
+        .blq5-btn{
+            width: auto;
+            margin-left: 20%;
+            background-color: $cSrv2;
+            color: $cSrv1;
+            border: none;
+            border-radius: 3px;
+            font-size: 25px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            transition: all 300ms;
+            padding: {
+                top:6px;
+                bottom:6px;
+                left:10px;
+                right:10px;
+            };
+            
+        }.blq5-btn:hover{
+            background: $cSrv1;
+            border: 1px solid $cSrv1;
+            color: #fff;
+        }
+    }
+}

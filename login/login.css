@@ -1,0 +1,118 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: #233672;
+  /* fallback for old browsers */
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 500px;
+  width: 400px;
+  background-color: #102157;
+  margin-top: 70px;
+  margin-left: 35%;
+}
+
+.container .header {
+  color: white;
+  margin: 20px;
+}
+
+.container .opc,
+.container .opc1 {
+  margin: 10px;
+  text-align: center;
+  list-style: none;
+}
+
+.container .opc .entrada,
+.container .opc1 .entrada {
+  margin: 20px;
+}
+
+.container .opc .entrada input,
+.container .opc1 .entrada input {
+  width: 270px;
+  height: 28px;
+  margin-top: 10px;
+}
+
+.container .opc .entrada input::-webkit-input-placeholder,
+.container .opc1 .entrada input::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.container .opc .entrada input:-ms-input-placeholder,
+.container .opc1 .entrada input:-ms-input-placeholder {
+  text-align: center;
+}
+
+.container .opc .entrada input::-ms-input-placeholder,
+.container .opc1 .entrada input::-ms-input-placeholder {
+  text-align: center;
+}
+
+.container .opc .entrada input::placeholder,
+.container .opc1 .entrada input::placeholder {
+  text-align: center;
+}
+
+.container .opc1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 20px;
+  width: 300px;
+}
+
+.container .opc1 .opc1-li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.container .opc1 .opc1-li a {
+  width: 200px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  background-color: #F7AA06;
+}
+
+.container .opc1 .opc1-li a:hover {
+  border-radius: 10px;
+}
+
+.container .opc1 .opc1-li:last-child {
+  color: white;
+}
+/*# sourceMappingURL=login.css.map */

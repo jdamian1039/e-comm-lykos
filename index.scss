@@ -1,0 +1,45 @@
+@import "components/bloque1";
+@import "components/bloque2";
+@import "components/bloque3";
+@import "components/bloque4";
+@import "components/bloque5";
+@import "components/bloque9";
+@import "components/colors";
+@import "components/size";
+@import "components/bloqueApp";
+@import "components/_bloque-doce";
+@import "components/carousel";
+@import "components/bloque-seg-ind";
+@import "components/bloque-videoOpinion";
+
+*{
+    padding: 0;
+    margin: auto;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 4px;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    .container-l{
+        background-image: url("img/foto_menu.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position-y: 100%;
+        background-size: 100%;
+        max-width:1550px;
+        width: 100%;
+        
+        .Lyk-comm-header{
+            display: flex;
+            align-items: flex-end;
+            height: 140px;
+            @import "components/LykCommNav";
+        }
+    }
+    
+}

@@ -1,0 +1,88 @@
+@import "colors";
+@import "size";
+
+.bloque9{
+    height: 800px;
+    background:linear-gradient(270deg,#fff,$cSrv1 55%);
+    background-color: $cSrv2;
+    color: $cWht;
+    overflow: hidden;  
+    padding-left: 0%;
+    padding-right: 0%;  
+    .blq9-sct{
+        width: 100%;
+        margin: 0px 0px;
+        overflow: hidden;
+        
+        .blq9-sct-mind{
+            margin: {
+                top: 8%;
+                left: 8%;
+            }
+            text-align: left;
+            font-size: 55px;
+            font-weight: bolder;
+            text-shadow: 0px 5px black;
+            letter-spacing: 5px;
+        }
+        .blq9-sct-PCM{
+            width: 730px;
+            letter-spacing: 3px;
+            padding-left:0px;
+            margin: {
+                top: 40px;
+                left: 2%;
+            }
+            //border-left: 12px solid $cSrv2;
+            font-size: 30px;
+        }
+        .blq9-sct-lk{
+            background-color: $cSrv2;
+            color: $cSrv1;
+            font-weight: bold;
+            width: auto;
+            border-radius: 5px;
+            font-size: 25px;
+            margin: {
+                top: 40px;
+                bottom: 20px;
+                left: 25%;
+            }
+            padding: {
+                top:3px;
+                bottom: 3px;
+                left: 8px;
+                right:8px;
+            };
+            -webkit-transition: 300ms all;
+            transition: 300ms all;
+        }
+        .blq9-sct-lk:hover{
+            //box-shadow: 2px 5px $cBl;
+            color:#fff;
+            border: 1px solid $cSrv1;
+            background: $cSrv1;
+        }
+        #blq9-guard{
+            width: 42%;
+            margin: {
+                top: -54%;
+                left: 58%;
+            }
+            position: relative;
+        }
+    }
+}
+.pcm{
+    position: relative;
+    z-index: 5;
+    height: fit-content;
+    img{
+        position: absolute;
+    }
+    img:last-child{
+        width:12%;
+        top: -70%;
+        left: 78%;
+    }
+}

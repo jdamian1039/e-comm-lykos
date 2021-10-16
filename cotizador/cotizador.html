@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
+    <title>Cotizador</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/node-uuid/1.4.8/uuid.min.js"></script>
+    <link rel="stylesheet" href="cotizador.css">
+  <script src="appCotizador.js"></script>
+  </head>
+  <body onload="">
+
+    <div class="cot-h">
+      <nav class="cot-nav-h">
+
+        <ul class="cot-nav-list">
+          <li><a href="">inicio</a></li>
+          <li><a href="">costos</a></li>
+        </ul>
+        <span>
+          <img src="" alt="logo">
+        </span>
+
+      </nav>
+    </div>
+    <div class="container">
+      <header>
+        <h1>Cotizador</h1>
+        <p>Por favor complete las siguientes casillas, para generar la cotización de su servicio.</p>
+        <p>Gracias!</p>
+      </header>
+      <div class="formulario">
+        <form action="">
+          <div id="msj-error-cotizador"></div>
+          <div class="campo">
+            <label>Empresa</label>
+            <select name="marca" id="marca">
+              <option value="">-- EMPRESA --</option>
+              <option value="Pequegna">PEQUEÑA</option>
+              <option value="Mediana">MEDIANA</option>
+              <option value="Grande">GRANDE</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label>NOMBRE</label>
+            <input type="text">
+          </div>
+
+          <div class="campo">
+            <label>Guardias</label>
+            <select name="anio" id="anio">
+
+              <option value="">-- CANTIDAD DE GUARDIAS --</option>
+              <option value="2">1</option>
+              <option value="3">2</option>
+              <option value="4">3</option>
+              <option value="5">4</option>
+              <option value="6">5</option>
+              <option value="7">6</option>
+              <option value="8">7</option>
+              <option value="9">8</option>
+              <option value="10">9</option>
+              <option value="11">10</option>
+              <option value="12">11</option>
+            </select>
+          </div>
+
+          <div class="campo">
+
+            
+
+            <input type="radio"
+                    name="plan"
+                    value="completo"
+                    class="radio"
+                    id="completo"
+                  /> 24 hrs
+          </div>
+          <input type="button" onclick="cotizarSeguro()" class="button-primary u-full-width" value="Cotizar">
+        </form>
+        <div class="mensaje" id="msj">Elije marca, año y tipo de seguro</div>
+        <div id="resumen" style="display: none;"></div>
+        <div class="" id="resultado" style="display: none;"></div>
+        
+      </div>
+    </div>
+
+  </body>
+</html>

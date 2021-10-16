@@ -1,0 +1,59 @@
+.carousel-item{
+    .contenedor{
+        margin-top: 30px;
+        color:black;
+
+    }      
+}
+
+@mixin imagenCar($width:75%){
+    width: $width;
+    margin-right: 0%;
+    
+}
+
+@mixin imagenCarTouched{
+        filter: opacity(100%);
+    
+}
+.carousel-control-prev{
+    width: 3%;
+    color:black;
+}
+.carousel-control-next{
+    width: 3%;
+    opacity: 50%;
+}
+.carouselSelection{
+    filter: opacity(45%);
+    text-align: center;
+}
+
+.carouselSelection:hover{
+    @include imagenCarTouched();
+}
+
+#img1{
+    @include imagenCar();
+}
+#img2{
+    @include imagenCar();
+}
+#img3{
+    @include imagenCar();
+}
+#img4{
+    @include imagenCar();
+}
+#img5{
+    @include imagenCar();
+}
+#img6{
+    @include imagenCar();
+}
+#img7{
+    @include imagenCar();
+}
+#img8{
+    @include imagenCar();
+}

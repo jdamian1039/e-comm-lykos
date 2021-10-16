@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="signUp.css">
+  </head>
+  <body>
+
+    <div id="container">
+      <div class="form_top">
+        <h2>Formulario
+          <span>Registro</span>
+        </h2>
+        <form class="form_reg" action="connect.php" method="POST" id="form">
+          <input class="input" id="name" type="text" name="name" placeholder="&#128100; Nombre" required autofocus>
+          <input class="input" id="email" type="email" name="email" placeholder="&#9993; Email" required>
+          <input class="input" id="password" type="password" name="password" placeholder="&#9993; Contraseña" required>
+          <input class="input" id="phone" type="number" name="phone" placeholder="&#128222; Telefono" required>
+          <input class="input" id="address" type="text" name="address" placeholder="&#8962; Direccion de empresa" required>
+
+          <div class="btn_form">
+            <input class="btn_submit" type="submit" value="REGISTRAR">
+            <input class="btn_reset" type="reset" name="" value="LIMPIAR">
+            <p class="warnings" id="warnings"></p>
+          </div>
+        
+
+        </form>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,68 @@
+.Lyk-comm-nav{
+    width: $full;
+    height: 40%;
+    font-family: 'Montserrat', sans-serif;
+    margin-left:3%;
+    .Lyk-comm-list{
+        display: flex;
+        width: $full;
+        height: $full;
+        list-style: none;
+        padding-left: 0%;
+        
+        .Lyk-comm-item{
+            width:auto;
+            margin-left: 0%;
+            margin-right: 70px;
+            height: $full;
+            .Lyk-comm-item-link{
+                padding-left: 15px;
+                padding-right: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                height: $full;
+                text-decoration: none;
+                color: white;
+                transition: all 250ms;
+                letter-spacing: 2px;
+                border-radius: 7px;
+                
+            }.Lyk-comm-item-link:hover{
+                /*border: {
+                    left: 4px solid $cSrv2;
+                    bottom: 3px solid $cSrv2;
+                }
+                box-shadow: -1px 1px 5px $cSrv2, -1px 2px 3px $cSrv1, -1px 1px 3px $cSrv1;
+                */
+                color:$cSrv1;
+                background: $cSrv2;
+                font-weight: bold;
+            }.Lyk-comm-item-link-logo{
+                padding-left: 15px;
+                padding-right: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                height: $full;
+                text-decoration: none;
+                color: white;
+                transition: all 250ms;
+                letter-spacing: 2px;
+                border-radius: 7px;
+            }.Lyk-comm-item-link-logo:hover{
+                color:$cSrv1;
+                font-weight: bold;
+            }
+            
+        }
+    }
+}
+
+#logobarra{
+    display: inline-flex;
+    img{
+        padding-right: 10px;
+    }
+    
+}

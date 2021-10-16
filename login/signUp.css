@@ -1,0 +1,115 @@
+* {
+  padding: 0px;
+  border: 0px;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: #233672;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#233672));
+  background: linear-gradient(to right, #233672);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+  max-width: 450px;
+  height: auto;
+  background-color: #EFEFEF;
+  border: 1px solid #F7AA06;
+  margin: 5% auto;
+  padding-bottom: 1rem;
+}
+
+#container .form_top {
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0 1rem;
+  border-top: solid .4rem #F39B53;
+  margin-bottom: 1rem;
+}
+
+#container .form_top h2 {
+  font-weight: bold;
+  color: #CAC8C8;
+  font-size: 18px;
+}
+
+#container .form_top h2 span {
+  color: #f39b53;
+}
+
+#container .form_top .form_reg {
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#container .form_top .form_reg .btn_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 1rem;
+}
+
+#container .form_top .form_reg .btn_form .btn_submit,
+#container .form_top .form_reg .btn_form .btn_reset {
+  width: 40%;
+  border-bottom: none;
+  background-color: #31B1E5;
+  color: white;
+}
+
+#container .form_top .form_reg .btn_form .btn_reset {
+  background-color: #4C9ED9;
+}
+
+#container .form_top .form_reg .btn_form .warnings {
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: #806ab3;
+  padding-top: 20px;
+}
+
+#container .form_top .form_reg .btn_submit:hover {
+  background-color: #F7AA06;
+}
+
+#container .form_top .form_reg .input, #container .form_top .form_reg .btn_submit, #container .form_top .form_reg .btn_reset {
+  background-color: #EFEFEF;
+  padding: .5rem;
+  margin: .5rem 0;
+  border: none;
+  border-bottom: solid #C8C8C8 .2rem;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+#container .form_top .form_reg .input:focus {
+  border-bottom: solid #F7AA06 .2rem;
+}
+
+#container .form_top .form_reg .warnings {
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  -webkit-columns: #806ab3;
+          columns: #806ab3;
+  padding-top: 20px;
+}
+/*# sourceMappingURL=signUp.css.map */

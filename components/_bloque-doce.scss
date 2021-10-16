@@ -1,0 +1,84 @@
+.bloqueRobo {
+  @include block(100%,hidden,730px,url("img/IMAGENFONDO.jpg"),#fff);
+  background-attachment: fixed;
+  background-position-x: center;
+}
+@mixin informativo ($width:100%,$margintop:2%){
+  width: $width;
+  color:#fff;
+  margin-top: $margintop;
+  height: auto;
+  font-family: 'Montserrat', sans-serif;
+}
+@mixin guardia($widthGu:100%,$height:100px,$widthIm:110%,$margintop:10px){
+  width: $widthGu;
+  height:$height;
+  img{
+    width: $widthIm;
+    margin-top: $margintop;
+  }
+}
+#informativo{
+  @include informativo(730%,4%);
+
+}
+#guardia{
+  @include guardia(390%,710px,112%,23px);
+}
+#informativo2{
+  @include informativo(50%,6%);
+}
+#guardia2{
+  margin-top: 4%;
+  width: 50%;
+  img{
+    width: 100%;
+    right:80px;
+  }
+}
+.textoChico{
+  font-size: 190%;
+  text-align: left;
+  text-shadow: 2px 2px black;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 3px;
+}
+.textoMediano{
+  padding-top: 1%;
+  font-size: 300%;
+  text-shadow: 2px 2px black;
+  padding-left: 3%;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 3px;
+}
+.textoNormal{
+  padding-top: 10%;
+  font-size: 240%;
+  text-align: right;
+  padding-right: 10%;
+  text-shadow: 2px 2px black;
+  letter-spacing: 3px;
+}
+.bt-amarillo{
+  width: 300px;
+  font-size: 25px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-top: 2%;
+  margin-left: 35%;
+  font-weight: bold;
+  color: $cSrv1;
+  border-radius: 5px;
+  border: 1px solid $cSrv1;
+  background:$cSrv2;
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
+  letter-spacing: 2px;
+}
+.bt-amarillo:hover{
+  color:#fff;
+  border: 1px solid $cSrv1;
+  background: $cSrv1;
+}

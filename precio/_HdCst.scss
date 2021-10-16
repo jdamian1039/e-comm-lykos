@@ -1,0 +1,15 @@
+.gmm-bt-lph-H{ //gamma beta alpha header
+    margin-top: 20px;
+    text-align: center;
+}
+
+.time-cost{ 
+    display:flex;
+    justify-content: space-around;
+    
+    .cost{
+        .cost-clr{
+            color: $cSrv2;
+        }
+    }
+} 
