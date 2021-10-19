@@ -980,12 +980,59 @@ h1 {
 
 footer {
   background: #041E41;
+  color: #fff;
 }
 
 footer .contenedor {
-  width: 90%;
+  width: 93%;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+footer .contenedor .novedades {
+  text-align: right;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+footer .contenedor .novedades h1 {
+  font-size: 30px;
+  text-align: right;
+  font-weight: bold;
+}
+
+footer .contenedor .novedades h1 strong {
+  color: #EEB007;
+}
+
+footer .contenedor .novedades p {
+  font-size: 26px;
+}
+
+footer .contenedor .novedades input {
+  width: 300px;
+  border-radius: 5px;
+  padding-left: 5px;
+  background: #EEB007;
+  color: #041E41;
+}
+
+footer .contenedor .novedades .media {
+  text-align: right;
+  padding-right: 45px;
+}
+
+footer .contenedor .novedades .media a {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+footer .contenedor .novedades .media a img {
+  width: 65px;
 }
 
 * {

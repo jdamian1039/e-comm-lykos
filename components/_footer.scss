@@ -1,8 +1,46 @@
 footer{
     background: $cSrv1;
+    color:#fff;
     .contenedor{
-        width:90%;
+        width:93%;
         display: grid;
-        
+        grid-template-columns: 1fr 1fr;
+        margin-left: 0px;
+        margin-right: 0px;
+        .novedades{
+            text-align: right;
+            margin-left: 0px;
+            margin-right: 0px;
+            h1{
+                font-size: 30px; 
+                text-align: right;
+                font-weight: bold;
+                strong{
+                    color: $cSrv2;
+                }
+            }
+            p{
+                font-size: 26px;
+            }
+            input{
+                width:300px;
+                border-radius: 5px;
+                padding-left: 5px;
+                background: $cSrv2;
+                color:$cSrv1;
+            }
+            .media{
+                text-align: right;
+                padding-right: 45px;
+                a{
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    img{
+                        width:65px;
+                    }
+                }
+            }
+        }
     }
 }
+
