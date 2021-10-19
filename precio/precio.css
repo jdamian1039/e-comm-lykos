@@ -5,7 +5,7 @@
   text-align: center;
   font-size: 20px;
   background-color: #ffffff;
-  color: #F7AA06;
+  color: #EEB007;
   margin-top: 20px;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .time-cost .cost .cost-clr {
-  color: #F7AA06;
+  color: #EEB007;
 }
 
 .gmm-bt-lph-lst {
@@ -39,7 +39,7 @@
 }
 
 .gmm-bt-lph-lst .c-gblp-lst-itm span {
-  color: #F7AA06;
+  color: #EEB007;
 }
 
 .c-gblp-btn {
@@ -62,7 +62,7 @@
 
 .c-gblp-btn .c-gblp-btn-lnk:hover {
   background-color: #041E41;
-  color: #F7AA06;
+  color: #EEB007;
 }
 
 * {
