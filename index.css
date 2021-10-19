@@ -982,6 +982,12 @@ footer {
   background: #041E41;
 }
 
+footer .contenedor {
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+}
+
 * {
   padding: 0;
   margin: auto;
