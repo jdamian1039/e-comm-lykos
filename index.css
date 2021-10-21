@@ -1064,16 +1064,14 @@ footer .contenedor .info-general div span {
 }
 
 footer .contenedor .info-general div span img {
-  width: 110px;
+  width: 105px;
   padding-right: 6px;
   border-right: 3px solid #fff;
 }
 
-img {
-  width: 24px;
-  margin-left: 0px;
-  padding-right: 8px;
-  padding-left: 0px;
+#address {
+  padding-right: 7px;
+  width: 22px;
 }
 
 .contenedor-abajo {
@@ -1084,7 +1082,17 @@ img {
 }
 
 .contenedor-abajo img {
-  width: 170px;
+  width: 160px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 35px;
+  margin-bottom: 60px;
+  padding: 0px;
+}
+
+.contenedor-abajo p {
+  padding-bottom: 25px;
+  margin-bottom: 0px;
 }
 
 * {
@@ -1212,6 +1220,7 @@ body .container-l .Lyk-comm-header #logobarra {
 }
 
 body .container-l .Lyk-comm-header #logobarra img {
+  width: 190px;
   padding-right: 10px;
 }
 /*# sourceMappingURL=index.css.map */
