@@ -27,7 +27,7 @@ body::-webkit-scrollbar-thumb {
 body{
     font-family: 'Montserrat', sans-serif;
     .container-l{
-        background-image: url("img/foto_menu.jpg");
+        background-image: url("img/WhatsApp\ Video\ 2021-10-22\ at\ 13.46.07.gif");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position-y: 100%;
@@ -43,4 +43,12 @@ body{
         }
     }
     
+}
+.container-l::before{
+    min-height: 110vh;
+    max-width:1550px;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(90deg,$cSrv1,$cSrv1);
+    opacity: 50%;
 }

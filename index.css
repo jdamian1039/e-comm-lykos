@@ -1072,7 +1072,7 @@ footer .contenedor .info-general p img {
 }
 
 .contenedor-abajo img {
-  height: 50px;
+  height: 20px;
   margin-left: 0px;
   margin-right: 0px;
   margin-top: 35px;
@@ -1103,7 +1103,7 @@ body {
 }
 
 body .container-l {
-  background-image: url("img/foto_menu.jpg");
+  background-image: url("img/WhatsApp Video 2021-10-22 at 13.46.07.gif");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position-y: 100%;
@@ -1212,5 +1212,15 @@ body .container-l .Lyk-comm-header #logobarra {
 body .container-l .Lyk-comm-header #logobarra img {
   width: 190px;
   padding-right: 10px;
+}
+
+.container-l::before {
+  min-height: 110vh;
+  max-width: 1550px;
+  width: 100%;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, right top, from(#041E41), to(#041E41));
+  background: linear-gradient(90deg, #041E41, #041E41);
+  opacity: 50%;
 }
 /*# sourceMappingURL=index.css.map */
