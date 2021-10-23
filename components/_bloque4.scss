@@ -9,15 +9,15 @@ h1{
 .bloque4{
     width: 100%;
     height: $box + 180px;
-
+    background: #fff;
     .bq4-h{
         width: 100%;
         height: auto;
         text-align: center;
         font-size: 25px;
         margin: {
-            top: 3%;
-            bottom: 45px;
+            top: 0%;
+            bottom: 0px;
         }
         
     }
@@ -27,8 +27,7 @@ h1{
         justify-content: flex-start;
         width: 90%;
         height: 400px;
-        
-        
+ 
         .bq4-contr{
             width: 40%;
             color:$cSrv1;
@@ -78,6 +77,7 @@ h1{
     }
 }
 #bq4-process{
+    padding-top: 30px;
     color:$cSrv1;
     letter-spacing: 3px;
     font-size: 80px;

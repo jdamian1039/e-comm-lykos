@@ -26,15 +26,16 @@ body::-webkit-scrollbar-thumb {
 }
 body{
     font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(90deg,$cSrv1,$cSrv1);
+    position: absolute;
     .container-l{
+        max-width:1550px;
+        width: 100%;
         background-image: url("img/WhatsApp\ Video\ 2021-10-22\ at\ 13.46.07.gif");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position-y: 100%;
         background-size: 100%;
-        max-width:1550px;
-        width: 100%;
-        
         .Lyk-comm-header{
             display: flex;
             align-items: flex-end;
@@ -43,12 +44,4 @@ body{
         }
     }
     
-}
-.container-l::before{
-    min-height: 110vh;
-    max-width:1550px;
-    width: 100%;
-    position: absolute;
-    background: linear-gradient(90deg,$cSrv1,$cSrv1);
-    opacity: 50%;
 }

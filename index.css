@@ -133,9 +133,9 @@
 }
 
 .bloque3 .blq3-ctner {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
   height: 63%;
   color: white;
@@ -220,6 +220,7 @@ h1 {
 .bloque4 {
   width: 100%;
   height: 730px;
+  background: #fff;
 }
 
 .bloque4 .bq4-h {
@@ -227,8 +228,8 @@ h1 {
   height: auto;
   text-align: center;
   font-size: 25px;
-  margin-top: 3%;
-  margin-bottom: 45px;
+  margin-top: 0%;
+  margin-bottom: 0px;
 }
 
 .bloque4 .bq4-body {
@@ -302,6 +303,7 @@ h1 {
 }
 
 #bq4-process {
+  padding-top: 30px;
   color: #041E41;
   letter-spacing: 3px;
   font-size: 80px;
@@ -1000,8 +1002,8 @@ footer .contenedor .novedades {
   margin-right: 0px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 3fr;
-      grid-template-rows: 1fr 3fr;
+  -ms-grid-rows: 1fr 4fr;
+      grid-template-rows: 1fr 4fr;
 }
 
 footer .contenedor .novedades h1 {
@@ -1046,8 +1048,8 @@ footer .contenedor .info-general {
   margin-right: 0px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[3];
-      grid-template-rows: repeat(3, 1fr);
+  -ms-grid-rows: 4fr 2fr 2fr;
+      grid-template-rows: 4fr 2fr 2fr;
 }
 
 footer .contenedor .info-general p {
@@ -1064,6 +1066,17 @@ footer .contenedor .info-general p img {
   width: 22px;
 }
 
+.logos {
+  margin-left: 0px;
+}
+
+.logos img {
+  height: 40px;
+  padding-left: 18px;
+  padding-right: 7px;
+  border-right: 3px solid #fff;
+}
+
 .contenedor-abajo {
   width: 93%;
   max-width: 1550px;
@@ -1072,7 +1085,7 @@ footer .contenedor .info-general p img {
 }
 
 .contenedor-abajo img {
-  height: 20px;
+  height: 40px;
   margin-left: 0px;
   margin-right: 0px;
   margin-top: 35px;
@@ -1100,16 +1113,19 @@ body::-webkit-scrollbar-thumb {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background-image: -webkit-gradient(linear, left top, right top, from(#041E41), to(#041E41));
+  background-image: linear-gradient(90deg, #041E41, #041E41);
+  position: absolute;
 }
 
 body .container-l {
+  max-width: 1550px;
+  width: 100%;
   background-image: url("img/WhatsApp Video 2021-10-22 at 13.46.07.gif");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position-y: 100%;
   background-size: 100%;
-  max-width: 1550px;
-  width: 100%;
 }
 
 body .container-l .Lyk-comm-header {
@@ -1212,15 +1228,5 @@ body .container-l .Lyk-comm-header #logobarra {
 body .container-l .Lyk-comm-header #logobarra img {
   width: 190px;
   padding-right: 10px;
-}
-
-.container-l::before {
-  min-height: 110vh;
-  max-width: 1550px;
-  width: 100%;
-  position: absolute;
-  background: -webkit-gradient(linear, left top, right top, from(#041E41), to(#041E41));
-  background: linear-gradient(90deg, #041E41, #041E41);
-  opacity: 50%;
 }
 /*# sourceMappingURL=index.css.map */
