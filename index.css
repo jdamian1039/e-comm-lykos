@@ -672,31 +672,35 @@ h1 {
   color: #fff;
   background-attachment: fixed;
   background-position-x: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 3fr;
+      grid-template-columns: 2fr 3fr;
 }
 
 #informativo {
-  width: 730%;
+  width: 100%;
   color: #fff;
-  margin-top: 4%;
-  height: auto;
+  margin-top: 2%;
+  height: 100%;
   font-family: 'Montserrat', sans-serif;
 }
 
 #guardia {
-  width: 390%;
-  height: 710px;
+  position: relative;
 }
 
 #guardia img {
-  width: 112%;
-  margin-top: 23px;
+  width: 600px;
+  margin-top: 12px;
+  z-index: 5;
 }
 
 #informativo2 {
   width: 50%;
   color: #fff;
   margin-top: 6%;
-  height: auto;
+  height: 100%;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -711,7 +715,7 @@ h1 {
 }
 
 .textoChico {
-  font-size: 190%;
+  font-size: 25px;
   text-align: left;
   text-shadow: 2px 2px black;
   font-family: 'Montserrat', sans-serif;
