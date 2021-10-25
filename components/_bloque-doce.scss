@@ -28,14 +28,15 @@
   position: relative;
 }
 #informativo2{
-  @include informativo(50%,6%);
+  @include informativo(100%,60px);
+  height: 100%;
 }
 #guardia2{
   margin-top: 4%;
-  width: 50%;
+  width: 100%;
   img{
     width: 100%;
-    right:80px;
+    position: relative;
   }
 }
 .textoChico{
