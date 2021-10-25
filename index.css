@@ -1117,14 +1117,12 @@ body::-webkit-scrollbar-thumb {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-image: -webkit-gradient(linear, left top, right top, from(#041E41), to(#041E41));
-  background-image: linear-gradient(90deg, #041E41, #041E41);
-  position: absolute;
 }
 
 body .container-l {
   max-width: 1550px;
   width: 100%;
+  min-height: 100vh;
   background-image: url("img/WhatsApp Video 2021-10-22 at 13.46.07.gif");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1232,5 +1230,14 @@ body .container-l .Lyk-comm-header #logobarra {
 body .container-l .Lyk-comm-header #logobarra img {
   width: 190px;
   padding-right: 10px;
+}
+
+.container-l::before {
+  width: 100%;
+  position: absolute;
+  min-height: 100vh;
+  max-width: 1550px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#041E41), to(#041E41));
+  background-image: linear-gradient(90deg, #041E41, #041E41);
 }
 /*# sourceMappingURL=index.css.map */
