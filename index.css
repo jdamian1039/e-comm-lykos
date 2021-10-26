@@ -1239,6 +1239,83 @@ body .container-l .Lyk-comm-header #logobarra img {
   padding-right: 10px;
 }
 
+body .container-l .Lyk-comm-header .nav {
+  display: none;
+}
+
+body .container-l .Lyk-comm-header .sticky {
+  width: 100%;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  background: #041E41;
+  display: none;
+}
+
+@media (max-width: 1134px) {
+  body .container-l .Lyk-comm-header .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    max-width: 1134px;
+    margin: 0 0;
+  }
+  body .container-l .Lyk-comm-header .sticky {
+    display: none;
+  }
+  body .container-l .Lyk-comm-header .Lyk-comm-nav {
+    display: none;
+  }
+  body .container-l .Lyk-comm-header .logo {
+    font-size: 25px;
+    padding: 0 20px;
+    line-height: 60px;
+    margin: 0 0;
+  }
+  body .container-l .Lyk-comm-header .nav-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    background-color: #2c3e50;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    left: 100%;
+    -webkit-transition: left 0.3s;
+    transition: left 0.3s;
+  }
+  body .container-l .Lyk-comm-header .nav-menu-item {
+    line-height: 70px;
+  }
+  body .container-l .Lyk-comm-header .nav-menu-link:hover,
+  body .container-l .Lyk-comm-header .nav-menu-link_active {
+    background: none;
+    color: #83c5f7;
+  }
+  body .container-l .Lyk-comm-header .nav-toggle {
+    display: block;
+  }
+  body .container-l .Lyk-comm-header .nav-menu_visible {
+    left: 0;
+  }
+  body .container-l .Lyk-comm-header .nav-toggle:focus:not(:focus-visible) {
+    outline: none;
+  }
+}
+
 .container-l::before {
   width: 100%;
   position: absolute;
