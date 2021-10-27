@@ -43,6 +43,12 @@ footer{
                         width:65px;
                     }
                 }
+                a:hover{
+                    img{
+                        width:85px;
+                        transition: 300ms all;
+                    }
+                }
             }
         }
         .info-general{

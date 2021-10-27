@@ -26,20 +26,21 @@ body::-webkit-scrollbar-thumb {
 }
 body{
     font-family: 'Montserrat', sans-serif;
+    background-image: url("img/WhatsApp\ Video\ 2021-10-22\ at\ 13.46.07.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: 100%;
+    background-size: 100%;
     .container-l{
         max-width:1550px;
         width: 100%;
-        min-height: 100vh;
-        background-image: url("img/WhatsApp\ Video\ 2021-10-22\ at\ 13.46.07.gif");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position-y: 100%;
-        background-size: 100%;
+        
         .Lyk-comm-header{
             display: flex;
-            align-items: flex-end;
-            height: 140px;
+            
+            height: 100px;
             @import "components/LykCommNav";
+            padding: 0;
         }
     }  
 }
@@ -49,5 +50,5 @@ body{
     min-height: 100vh;
     max-width: 1550px;
     background-image: linear-gradient(90deg,$cSrv1,$cSrv1);
-    
+    padding: 0;
 }
