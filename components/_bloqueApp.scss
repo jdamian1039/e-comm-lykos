@@ -56,78 +56,7 @@
     font-family: 'Montserrat', sans-serif;
     color: $cSrv1;
   }
-  .bloqueApp{
-    @include block;
-    max-width:1550px;
-    display:grid;
-    grid-template-columns: 6fr 5fr;
-    width: 100%;
-    height: auto;
-  }
-  .separator1{
-    width: 100%;
-    margin-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    height:auto;
-  }  
-  .separator2{
-    width: 100%;
-    margin-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    height:auto;
-    display: block;
-  }
-  .icon-center{
-    position: relative;
-    z-index: 5;
-    height: fit-content;
-    text-align: center;
-    width:100%;
-    img{
-      width: 36%;
-      position: absolute;
-      right:44%;
-      margin-top: 15%;
-    }
-    img:last-child{
-      right: 22%;
-      margin-top: 28%;
-      width:25%;
-    }
-    .back{
-      width: 80%;
-      position: absolute;
-      margin: 0px;
-      right:12%;
-      top: 70px;
-    }
-  }
-  .iconos-Pie{
-    margin-top: 90%;
-    position: relative;
-    img{
-      width: 30%;  
-      margin-left: 42%;
-      position: absolute;
-    }
-    img:last-child{
-      margin-left:65%; 
-    }
-  }
-  #lykse{
-    width: 25%; 
-    margin-top:4%; 
-    margin-left: 50px;
-  }    
-  #seil{
-    text-align: center;
-    img{
-      width:37%; 
-      position: relative;
-    }
-  }    
+      
   .bt-Azul{
     width:40%;
     font-size: 140%;
