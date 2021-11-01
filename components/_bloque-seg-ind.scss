@@ -30,11 +30,11 @@
     @include titulocBarra(inline-flex,25%);
   }
   #barra2{
-    @include barra (90px,1em);
+    @include barra (auto,16px);
     margin-top: 10%;
   }
   #titulocBarra2{
-    @include titulocBarra(inline-flex,12%);
+    @include titulocBarra(inline-flex,7%);
   }
   #barra3{
     @include barra (398px,12px);
