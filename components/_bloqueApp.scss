@@ -22,44 +22,34 @@
     display: inline-flex;
     width: 100%;
   }
+  //DICTAMEN BLOQUE
+  .seil{
+    width: 100%;
+    text-align: center;
+    img{
+        width:460px;
+    }
+}
   .bloqueTitulo{
     margin-top: 60px; 
-    font-size: 70px;
+    font-size: 60px;
     font-family: 'Montserrat', sans-serif;
-    letter-spacing: 9px;
-  }
-  .bloqueTituloLargo{
-    width:100%;
-    text-align:left;
-    margin-top: 50px; 
-    font-size: 290%;
-    padding-left: 2%;
-    font-family: 'Montserrat', sans-serif;
-    border-left: 16px solid $cSrv2;
-  }
-  .bloqueTxt{
-    width: 100%;
-    padding-top: 2%;
-    text-align:left;
-    margin-left: 11%;
-    font-size: 215%;
-    margin-top: 60px;
-    color:$cSrv1;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
   }
   .bloqueTxtCentro{
     width: 100%;
-    font-size: 190%;
+    font-size: 30px;
     letter-spacing: 2px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: $cSrv1;
-  }
-      
+    .block{
+      display: none;
+    } 
+  }  
   .bt-Azul{
-    width:40%;
-    font-size: 140%;
+    width:auto;
+    font-size: 27px;
     padding-top: 3px;
     padding-bottom: 3px;
     padding-left: 18px;
@@ -77,6 +67,7 @@
     color:#041E41;
     border: 1px solid $cSrv1;
   }
+  //APP BLOQUE
   .centrado{
     margin-top: 3%;
     text-align: center; 
@@ -89,10 +80,10 @@
     height:150px;
   }
   #espacio3{
-    margin-left: 18%;
-    align-items: center; 
+    width: 100%;
+    text-align: center; 
   }
-  #texto11{
+  .text11{
     color:$cSrv2;
     padding-left: 6%;
   }
@@ -105,10 +96,6 @@
       width:15%;
     }
   }
-
-.app-images-m{
-  display:none;
-}
 
 .app-test{
   display: grid;
@@ -128,22 +115,28 @@
         margin-left: 13%;
         border-left: 15px solid $cSrv2;
         padding-left: 1%;
-        font-size: 260%;
+        font-size: 42px;
+        .s2{
+          display: none;
+        }
+        .s3{
+          display: none;
+        }
       }
       .bloqueTxt{
-        width: 100%;
+        width: 90%;
         padding-top: 2%;
         text-align:left;
         margin-left: 13%;
-        font-size: 200%;
+        font-size: 33px;
         margin-top: 5%;
         color:$cSrv1;
         font-family: 'Montserrat', sans-serif;
         letter-spacing: 2px;
       }
       .bt-Azul{
-        width:40%;
-        font-size: 140%;
+        width:auto;
+        font-size: 24px;
         margin-top: 7%;
         padding: 8px 18px;
         font-weight: bold;
@@ -159,8 +152,7 @@
         color:#041E41;
         border: 1px solid $cSrv1;
       }
-      
-    }
+    }      
     .icon-bground{
       position: relative;
       width: 100%;
@@ -171,51 +163,327 @@
         width: 75%;
         position:relative;
       }
-      img{
+      .cellphone{
         position: absolute;
         width: 32%;
         z-index: 5;
         top:27%;
         left: 20%;
       }
-      img:last-child{
+      .cellphone2{
+        position: absolute;
+        z-index: 5;
         width: 23%;
         top:41%;
         left: 50%;
       }
     }
-  }
-  .app-icons{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    .app-icon{
-      margin-top: 5%;
-      img{
-        width:15%;
+    .small-text{
+      display: none;
+      .bloqueTxt{
+        width: 90%;
+        text-align:left;
         margin-left: 6%;
+        font-size: 33px;
+        margin-top: 5%;
+        color:$cSrv1;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 2px;
+        
+      }
+      .bt-Azul{
+        width:auto;
+        font-size: 140%;
+        margin-top: 1%;
+        padding: 8px 18px;
+        font-weight: bold;
+        color: #ffffff;
+        border-radius: 5px;
+        border: 1px solid #ffffff;
+        background: $cSrv1;
+        -webkit-transition: 300ms all;
+        transition: 300ms all;
+      }  
+      .bt-Azul:hover {
+        background-color: #ffffff;
+        color:#041E41;
+        border: 1px solid $cSrv1;
       }
     }
-    .app-download{
-      text-align: right;
-      margin-top: 7%;
-      div{
-        width: 100%;
-        img{
-          width:25%;
-          margin-right: 3%;
-          padding-top: 6%;
-        }
-        img:last-child{
-          margin-right: 14%;
-          width: 26%;
-        }
+  } 
+}
+.app-icons{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .app-icon{
+    margin-top: 5%;
+    width:50%;
+    img{
+      width:20%;
+      margin-left: 6%;
+    }
+  }
+  .app-download{
+    text-align: right;
+    margin-top: 5%;
+    width:50%;
+    div{
+      width: 100%;
+      img{
+        width:15%;
+        margin-right: 3%;
+        padding-top: 9%;
       }
-      
+      img:last-child{
+        margin-right: 14%;
+        width: 16%;
+      }
+    } 
+  }
+}
+@media (max-width:1370px){
+  .app-test{
+    .app-content{
+      .app-text{
+          .bloqueTxt{
+            font-size: 28px;
+            width: 95%;
+          }
+      }
     }
   }
 }
-@media (max-width:1428px){
-  
+@media(max-width:1332px){
+  .app-test{
+    .app-content{
+      .icon-bground{
+        .cellphone{
+          width: 34%;
+          top: 23%;
+        }
+        .cellphone2{
+          top: 35%;
+          width: 25%;
+        }
+      }
+    }
+  }
+}
+@media (max-width:1190px){
+  .bloqueTitulo{
+    font-size: 51px;
+    letter-spacing: 3px;
+  }
+  .bloqueTxtCentro{
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+  .bt-Azul{
+    font-size: 21px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+@media (max-width:1080px){
+  .app-test{
+    .app-content{
+      .app-text{
+        .tituloApp{
+          font-size: 35px;
+        }
+        .bloqueTxt{   
+          font-size: 23px;
+        }
+        .bt-Azul{
+          font-size: 19px;
+          padding: 7px 16px;
+        }
+      }
+    }
+  }
+}
+@media (max-width:913px){
+  .app-test{
+    .app-content{
+      .app-text{
+        .bloqueTxt{
+          width: 90%;
+        }
+      }
+      .icon-bground{
+        .bck{
+          width: 87%;
+        }
+        .cellphone{
+          width: 47%;
+          top: 16%;
+          left: 13%;
+        }
+        .cellphone2{
+          top: 24%;
+          width: 39%;
+          left: 54%;
+        }
+      }
+    }
+  }
+}
+@media (max-width:868px){
+  .app-icons{
+    .app-icon{
+      img{
+        width: 30%;
+      }
+    }
+    .app-download{
+      div{
+        img{
+          width: 25%;
+          padding-top: 11%;
+        }
+        img:last-child{
+          width: 26%;   
+        }
+      }
+    }
+  }
+}
+@media (max-width:837px){
+  .bloqueTitulo{
+    font-size: 40px;
+  }
+  .bloqueTxtCentro{
+    font-size: 18px;
+    p{
+      text-align: left;
+      margin-left: 6%;
+      margin-bottom: 0;
+    }
+  }
+  .bt-Azul{
+    font-size: 18px;
+  }
+  .seil{
+    img{
+      width: 340px;
+    }
+  }
+}
+@media (max-width:768px){
+  .app-test{
+    .app-content{
+      display:contents;
+      .app-text{
+        .tituloApp{
+          font-size: 45px;
+          letter-spacing: 3px;
+          margin-left: 16%;
+          .s1{
+            display: none;
+          }
+          .s2{
+            display: block;
+          }
+          .s3{
+            display: block;
+          }
+        }
+        .bloqueTxt{
+          display: none;
+        }
+        .centrado{
+          display: none;
+        }
+        
+      }
+      .icon-bground{
+        .bck{
+          width: 50%;
+          left: 24%;
+          top:2%;
+        }
+        .cellphone{
+          width: 28%;
+          top: 0%;
+          left: 25%;
+        }
+        .cellphone2{
+          width: 24%;
+          top:8%;
+          left: 50%;
+        }
+      }
+      .small-text{
+        display: block;
+        .bloqueTxt{
+          width:100%;
+          font-size:26px;
+          margin-left: 1%;
+        }
+        .centrado{
+          margin-top: 30px;
+          .bt-Azul{
+            font-size: 22px;
+            padding: 8px 17px;
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width:690px){
+  .bloqueTitulo{
+    font-size: 33px;
+  }
+  .bloqueTxtCentro{
+    p{
+    font-size: 16px;
+    margin-left: 4%;
+    }
+    
+  }
+  .bt-Azul{
+    font-size: 18px;
+  }
+  .seil{
+    img{
+      width: 300px;
+    }
+  }
+}
+@media(max-width:599px){
+  .app-test{
+    .app-content{
+      .app-text{
+        .tituloApp{
+          font-size: 35px;
+        }
+      }
+      .small-text{
+        .bloqueTxt{
+          font-size: 29px;
+        }
+        
+      }
+    }
+  }
+  .bloqueTxtCentro{
+    width: 100%;
+    margin: auto;
+    p{
+      width:60%;
+      margin-left: 24%;
+      
+    }
+    .block{
+      display: block;
+    }
+    .unblock{
+      display: none;
+    }
+  }
   
 }

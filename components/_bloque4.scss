@@ -8,14 +8,13 @@ h1{
 
 .bloque4{
     width: 100%;
-    height: $box + 180px;
+    height: auto;
     background: #fff;
     overflow: hidden; 
     .bq4-h{
         width: 100%;
         height: auto;
         text-align: center;
-        font-size: 25px;
         margin: {
             top: 0%;
             bottom: 0px;
@@ -23,17 +22,17 @@ h1{
         
     }
     .bq4-body{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        width: 90%;
-        height: 400px;
- 
+        width: 95%;
+        height: auto;
+        margin: auto;
+        margin-top: 50px;
         .bq4-contr{
-            width: 40%;
+            width: 50%;
             color:$cSrv1;
-            height: 200px;   
+            height: auto;   
             text-align: center;
+            padding-bottom: 10px;
+            margin-bottom: 45px;
             .bq4-num{
                 display: flex;
                 align-items: center;
@@ -48,7 +47,6 @@ h1{
                     top: 0%;
                     left: 12%;
                 }
-            
             }
             p{
                 font-weight: bold;
@@ -63,11 +61,11 @@ h1{
                 width: 135px;
             }
             #pp{
-                width: 115px;
+                width: 113px;
                 padding-bottom: 8px;
             }
             #pp:hover{
-                width: 145px;
+                width: 143px;
             }
         }
         .bq4-line{
@@ -84,6 +82,49 @@ h1{
     font-size: 80px;
     width: auto;
 }
-#ultimo3{
-    margin-top: 3%;
+.step1{
+    border-right: 4px solid $cSrv2;
+}
+.step2{
+    border-left: 4px solid $cSrv2;
+}
+@media (max-width:1014px){
+    .bq4-body{
+        .bq4-contr{
+            p{
+                br{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media (max-width:982px){
+    .bloque4{
+        .bq4-body{
+            display: block;
+            .bq4-contr{
+                width: 100%;
+                p{
+                    br{
+                        display: block;
+                    }
+                }
+                .bq4-num{
+                    margin-left: 27%;
+                }
+            }
+        }
+    }
+    .step1{
+        border-right: none;
+    }
+    .step2{
+        border-left: none;
+    }
+}
+@media (max-width:606px){
+    #bq4-process{
+        font-size: 50px;
+    }
 }

@@ -4,16 +4,84 @@
     background-position-y: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    max-width:1550px;
+    .industrial-security{
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      ul{
+        margin-top: 25%;
+        margin-left: 25%;
+        text-align: left;
+        list-style: none;
+        font-size: 55px;
+        font-weight: bold;
+        border-left: 16px solid $cSrv2;
+        padding-left: 15px;
+        letter-spacing: 4px;
+        text-shadow: 0px 3px black;
+        .fourth{
+          color: $cSrv2;
+        }
+        li{
+          height: auto;
+        }
+        li:last-child{
+          color:$cSrv2;
+        }
+      }
+      button{
+        width:auto;
+        font-size: 27px;
+        margin-top: 7%;
+        padding: 8px 18px;
+        font-weight: bold;
+        color: $cSrv1;
+        border-radius: 5px;
+        box-shadow: 1px 1px black;
+        background: $cSrv2;
+        -webkit-transition: 300ms all;
+        transition: 300ms all;
+      }
+      button:hover {
+        background-color: $cSrv1;
+        color:#fff;
+        border: 0px solid $cSrv1;
+      }
+    }
+    .guard{
+      width: 100%;
+      height: 100%;
+      position: relative;
+      img{
+        width:100%;
+      }
+    }
+    .lil-button{
+      width:100%;
+      text-align:center;
+      position: absolute;
+      display: none;
+      top: 85%;
+      button{
+        width:auto;
+        font-size: 18px;
+        padding: 6px 16px;
+        font-weight: bold;
+        color: $cSrv1;
+        border-radius: 5px;
+        background: $cSrv2;
+        -webkit-transition: 300ms all;
+        transition: 300ms all;
+      }
+      button:hover {
+        background-color: $cSrv1;
+        color:#fff;
+        border: 0px solid $cSrv1;
+      }
+    }
   }
-  .textoGrande{
-    padding-top: 4%;
-    font-size: 370%;
-    text-shadow: 2px 2px black;
-    font-family: 'Montserrat', sans-serif;
-    margin-left: 3%;
-    letter-spacing: 2px;
-    width:550%;
-  }
+ 
   @mixin titulocBarra($disp:inline-flex,$marleft:0%){
     display: $disp; 
     margin-left: $marleft;
@@ -48,30 +116,111 @@
     margin-top: 48px;
   }
   #titulocBarra4{
-    @include titulocBarra(inline-flex,9%);
+    @include titulocBarra(inline-flex,1%);
   }
   #barra5{
     @include barra (30px,8px);
   }
-  .bt-amarillo-2{
-    width: 300px;
-    font-size: 25px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 18px;
-    padding-right: 18px;
-    margin-top: 2%;
-    margin-left: 33%;
-    font-weight: bold;
-    color: $cSrv1;
-    border-radius: 5px;
-    background:$cSrv2;
-    -webkit-transition: 300ms all;
-    transition: 300ms all;
-    letter-spacing: 2px;
+@media (max-width:1425px){
+  .bloqueSegIndus{
+    .industrial-security{
+      ul{
+        font-size: 45px;
+        li:last-child{
+          height: auto;
+        }
+      }
+    }
   }
-  .bt-amarillo-2:hover{
-    color:#fff;
-    border: 1px solid $cSrv1;
-    background: $cSrv1;
+}
+@media (max-width:1212px){
+  .bloqueSegIndus{
+    .industrial-security{
+      ul{
+        font-size: 42px;
+      }
+      button{
+        font-size: 20px;
+      }
+    }
   }
+}
+@media (max-width:1148px){
+  .bloqueSegIndus{
+    .industrial-security{
+      ul{
+        font-size: 38px;
+      }
+      button{
+        font-size: 19px;
+      }
+    }
+  }
+}
+@media (max-width:1062px){
+  .bloqueSegIndus{
+    .industrial-security{
+      ul{
+        font-size: 35px;
+        margin-left: 16%;
+      }
+      button{
+        font-size: 17px;
+        padding: 6px 14px;
+        margin-top: 5%;
+      }
+    }
+  }
+}
+@media (max-width:892px){
+  .bloqueSegIndus{
+    .industrial-security{
+      ul{
+        font-size: 30px;
+      }
+      button{
+        font-size: 17px;
+        padding: 6px 11px;
+        margin-top: 5%;
+      }
+    }
+  }
+} 
+@media (max-width:768px){
+  .bloqueSegIndus{
+    display: block;
+    .industrial-security{
+      ul{
+        margin-top: 5%;
+        margin-left: 8%;
+        margin-bottom: 0;
+        border-left: 11px solid $cSrv2;
+        font-size: 48px;
+        li{
+          height:50px;
+        }
+      }
+      button{
+        display: none;
+      }
+    }
+    .guard{
+      text-align: center;
+      img{
+        width:60%;
+      }
+      .lil-button{
+        display: block;
+      }
+    }
+  }
+} 
+@media(max-width:540px){
+  .bloqueSegIndus{
+    .industrial-security{
+      ul{
+        font-size: 35px;
+      }
+    }
+  }
+}

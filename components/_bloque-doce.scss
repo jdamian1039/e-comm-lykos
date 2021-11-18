@@ -1,44 +1,57 @@
 .bloqueRobo {
-  @include block(100%,hidden,730px,url("img/IMAGENFONDO.jpg"),#fff);
+  @include block(100%,hidden,auto,url("img/IMAGENFONDO.jpg"),#fff);
   background-attachment: fixed;
   background-position-x: center;
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: auto 1fr;
+  max-width:1550px;
 }
-@mixin informativo ($width:100%,$margintop:2%){
+@mixin informativo ($width:100%){
   width: $width;
   color:#fff;
-  margin-top: $margintop;
-  height: 100%;
+  height: auto;
   font-family: 'Montserrat', sans-serif;
 }
-@mixin guardia($widthIm:110%,$margintop:10px){
-  img{
-    width: $widthIm;
-    margin-top: $margintop;
-    z-index: 5;
-  }
-}
+
 #informativo{
   @include informativo();
-
-}
-#guardia{
-  @include guardia(600px,12px);
-  position: relative;
-}
-#informativo2{
-  @include informativo(100%,60px);
   height: 100%;
 }
-#guardia2{
-  margin-top: 4%;
+#guardia{
   width: 100%;
+  height: 100%;
+  position: relative;
   img{
-    width: 100%;
-    position: relative;
+    width: 630px;
+  }
+  div{
+    display: none;
+    position: absolute;
+    text-align: center;
+    top:85%;
+    width:100%;
+    button{
+      width: auto;
+      font-size: 19px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      padding-left: 12px;
+      padding-right: 12px;
+      font-weight: bold;
+      color: $cSrv1;
+      border-radius: 5px;
+      border: 1px solid $cSrv1;
+      background:$cSrv2;
+      -webkit-transition: 300ms all;
+      transition: 300ms all;
+      letter-spacing: 2px;
+    }
   }
 }
+.content{
+  margin-top: 6%;
+}
+
 .textoChico{
   font-size: 25px;
   text-align: left;
@@ -48,29 +61,28 @@
 }
 .textoMediano{
   padding-top: 1%;
-  font-size: 300%;
+  font-size: 44px;
   text-shadow: 2px 2px black;
-  padding-left: 3%;
+  padding-left: 0%;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 3px;
 }
 .textoNormal{
   padding-top: 10%;
-  font-size: 240%;
+  font-size: 37px;
   text-align: right;
   padding-right: 10%;
   text-shadow: 2px 2px black;
   letter-spacing: 3px;
 }
 .bt-amarillo{
-  width: 300px;
+  width: auto;
   font-size: 25px;
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 18px;
   padding-right: 18px;
   margin-top: 2%;
-  margin-left: 35%;
   font-weight: bold;
   color: $cSrv1;
   border-radius: 5px;
@@ -84,4 +96,153 @@
   color:#fff;
   border: 1px solid $cSrv1;
   background: $cSrv1;
+}
+
+.info-small{
+  display: none;
+  width: 100%;
+  height: auto;
+  padding-left:25%;
+  padding-top: 6%;
+}
+
+@media (max-width:1388px){
+  .textoMediano{
+    font-size:38px;
+    padding-top: 3%;
+  }
+  .textoChico{
+    letter-spacing: 0px;
+  }
+  .textoNormal{
+    font-size: 34px;
+    padding-top: 15%;
+  }
+}
+@media (max-width:1297px){
+  .textoMediano{
+    font-size:35px;
+  }
+  .textoChico{
+    font-size: 22px;
+  }
+  .textoNormal{
+    font-size: 30px;
+    padding-right: 7%;
+  }
+  #guardia{
+    img{
+      width: 580px;
+    }
+  }
+  .bt-amarillo{
+    font-size: 21px;
+    padding: 3px 14px;
+  }
+}
+@media (max-width:1201px){
+  .textoMediano{
+    font-size:32px;
+    letter-spacing: 2px;
+  }
+  .textoNormal{
+    font-size: 26px;
+  }
+  #guardia{
+    img{
+      width: 520px;
+    }
+  }
+}
+@media (max-width:1089px){
+  .textoMediano{
+    font-size:28px;
+    letter-spacing: 2px;
+  }
+  .textoNormal{
+    font-size: 22px;
+    padding-right: 10%;
+    padding-top: 11%;
+  }
+  .textoChico{
+    font-size: 18px;
+  }
+  #guardia{
+    img{
+      width: 460px;
+    }
+  }
+  .bt-amarillo{
+    font-size: 19px;
+    padding: 3px 14px;
+  }
+}
+@media (max-width:947px){
+  #guardia{
+    img{
+      width: 400px;
+    }
+  }
+}
+@media(max-width:885px){
+  .textoMediano{
+    text-align: center;
+  }
+  .textoNormal{
+    padding-top: 5%;
+    font-size: 19px;
+  }
+  .bt-amarillo{
+    font-size: 18px;
+    padding: 2px 9px;
+  }
+}
+@media (max-width:805px){
+  #guardia{
+    img{
+      padding-top: 6%;
+      width: 380px;
+    }
+  }
+}
+@media(max-width:769px){
+  .bloqueRobo{
+    display: block;
+  }
+  #informativo{
+    display: none;
+  }
+  #guardia{
+    text-align: center;
+    img{
+      width: 400px;
+      padding-top: 2%;
+    }
+    div{
+      display: block;
+    }
+    
+  }
+  .info-small{
+    display: block;
+    .textUp{
+      letter-spacing: 2px;
+      font-size: 20px;
+      padding-bottom: 5%;
+    }
+    .textMid{
+      letter-spacing: 3px;
+      font-size: 21px;
+      padding-bottom: 5%;
+    }
+    .textDown{
+      letter-spacing: 3px;
+      font-size: 22px;
+    }
+  }
+}
+@media (max-width:699px){
+  .info-small{
+    padding-left: 20%;
+  }
 }
