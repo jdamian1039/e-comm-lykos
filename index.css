@@ -456,6 +456,29 @@
   }
 }
 
+@media (max-width: 446px) {
+  .bloque3 .blq3-ctner div {
+    margin-left: 13%;
+  }
+  .bloque3 .blq3-ctner div .bq3-lst {
+    width: auto;
+  }
+  .bloque3 .blq3-ctner div .bq3-lst h1 {
+    width: auto;
+    font-size: 37px;
+  }
+  .bloque3 .blq3-ctner div .bq3-lst h2 {
+    width: auto;
+    font-size: 15px;
+  }
+  .bloque3 .blq3-ctner .bq3-sp {
+    margin-left: 12%;
+  }
+  .bloque3 .blq3-ctner .bq3-sp p {
+    font-size: 15px;
+  }
+}
+
 @media (max-width: 405px) {
   .bloque3 .blq3-ctner div {
     margin-left: 10%;
@@ -1554,6 +1577,12 @@ h1 {
   .bloqueTxtCentro p {
     width: 100%;
     margin-left: 70px;
+  }
+}
+
+@media (max-width: 412px) {
+  .bloqueTxtCentro p {
+    margin-left: 50px;
   }
 }
 
@@ -2893,6 +2922,13 @@ body .container-l .Lyk-comm-header .mobike-menu {
   }
   body .container-l .Lyk-comm-header .logo img {
     width: 140px;
+  }
+}
+
+@media (max-width: 749px) {
+  body .container-l .Lyk-comm-header .nav-toggle {
+    font-size: 15px;
+    padding: 0px 10px;
   }
 }
 
