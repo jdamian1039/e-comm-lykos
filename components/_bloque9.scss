@@ -51,6 +51,7 @@
                 font-weight: bold;
                 width: auto;
                 border-radius: 5px;
+                border: $cSrv2;
                 font-size: 25px;
                 margin: {
                     top: 40px;
@@ -90,6 +91,14 @@
             position: absolute;
         }
     }
+}
+.pcm-m{
+    width: 120px;
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+    z-index: 5;
+    display: none;
 }
 @media (max-width:1382px){
     .bloque9{
@@ -136,6 +145,7 @@
     .bloque9{
         height: 656px;
         div{
+            position: relative;
             .blq9-sct-PCM{
                 font-size: 24px;
             }
@@ -156,6 +166,9 @@
                 display: none;
             }
         }
+    }
+    .pcm-m{
+        display: block;
     }
 }
 @media(max-width:968px){
@@ -234,9 +247,12 @@
             .blq9-sct-mind{
                 text-align: left;
                 margin-left: 6%;
+                width: 100%;
+                font-size: 35px;
             }
             .blq9-sct-PCM{
                 margin-left: 6%;
+                width: auto;
             }
             div{
                 .blq9-sct-lk{
@@ -245,5 +261,81 @@
             }
         }
         
+    }
+    .pcm-m{
+        left: 15px;
+    }
+}
+@media(max-width:607px){
+    .bloque9{
+        height: 730px;
+        div{
+            .blq9-sct-mind{
+                width: 400px;
+                font-size: 27px;
+            }
+            .blq9-sct-PCM{
+                font-size: 20px;
+            }
+        }
+        .pcm{
+            .blq9-guard{
+                width: 350px;
+            }
+        }
+    }
+}
+@media(max-width:586px){
+    .bloque9{
+        height: 660px;
+        div{
+            .blq9-sct-PCM{
+                font-size: 15px;
+                border-left: 7px solid $cSrv2;
+                padding-left: 6px;
+            }
+            div{
+                .blq9-sct-lk{
+                    margin-top: 20px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:476px){
+    .bloque9{
+        height: 600px;
+        .pcm{
+            .blq9-guard{
+                width:300px;
+            }
+        }
+    }
+    .pcm-m{
+        width: 80px;
+    }
+}
+@media(max-width:448px){
+    .bloque9{
+        height: 450px;
+        div{
+            .blq9-sct-mind{
+                font-size: 19px;
+            }
+            .blq9-sct-PCM{
+                font-size: 11px;
+            }
+            div{
+                .blq9-sct-lk{
+                    font-size: 14px;
+                }
+            }
+        }
+        .pcm{
+            .blq9-guard{
+                width: 220px;
+            }
+        }
     }
 }

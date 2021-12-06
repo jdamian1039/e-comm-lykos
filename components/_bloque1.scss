@@ -4,12 +4,8 @@
     height: $box + 49px;
     
     .bloq-bl1{
-        display: flex;
-        width: 96%;
-        height: 94%;
+        width: 100%;
         color: white;
-        line-height: 60px;
-
         .u-list{
             padding-top: 120px;
             padding-left: 00;
@@ -28,75 +24,98 @@
                 font-size: 50px;
                 text-shadow: 0px 3px black;
             }
-        }/*.u-list>*{
-            text-shadow: -5px 10px 10px $cSrv2;
-        }*/
+            .bl1-click{
+                width: auto;
+                letter-spacing: 2px;     
+                font-size: 25px;
+                font-weight: bold;
+                margin-top: 25px;
+                border-radius: 10px;
+                border: 1px solid $cSrv2;
+                background: $cSrv2;
+                color: $cSrv1;
+                transition: 300ms all;
+                padding-left: 13px;
+                padding-right: 13px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                
+            }.bl1-click:hover{
+                background: $cSrv1;
+                color: #fff;
+                border: 1px solid $cSrv1;
+            }
+            .button-mid{
+                display: none;
+            }
+        }
     }
-    .bl1-click{
-        width: auto;
-        letter-spacing: 2px;     
-        font-size: 25px;
-        font-weight: bold;
-        margin-top: 25px;
-        border-radius: 10px;
-        border: 1px solid $cSrv2;
-        background: $cSrv2;
-        color: $cSrv1;
-        transition: 300ms all;
-        padding-left: 13px;
-        padding-right: 13px;
+    
+}
+
+
+@media (max-width:1107px){
+    .bloque1{
+        height: 530px;
+        .bloq-bl1{
+            .u-list{
+                .bloq-bl1-title{
+                    font-size: 75px;
+                }
+                .u-li-parr{
+                    font-size: 38px;
+                }
+                .bl1-click{
+                    font-size: 20px;
+                }
+            }
+        }
         
-    }.bl1-click:hover{
-        background: $cSrv1;
-        color: #fff;
-        border: 1px solid $cSrv1;
     }
 }
-.u-list-m{
-    padding-top: 100px;
-    padding-left: 0;
-    text-align: center;
-    width: 90%;
-    height: $full;
-    font-size: 30px;
-    .bloq-bl1-title{
-        font-size: 60px;
-        font-weight: bold;
-        letter-spacing: 4px;
-        text-shadow: 0px 5px black;  
+@media (max-width:946px){
+    .bloque1{
+        height: 430px;
+        .bloq-bl1{
+            .u-list{
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+                padding-top: 70px;
+                .bloq-bl1-title{
+                    font-size: 59px;
+                }
+                .u-li-parr{
+                    font-size: 26px;
+                }
+            }
+        }
     }
-    .u-li-parr{
-        letter-spacing: 3px;
-        font-size: 30px;
-        text-shadow: 0px 3px black;
-        margin: 0;
-    }
-    .bl1-click{
-        width: auto;
-        letter-spacing: 2px;     
-        font-size: 18px;
-        font-weight: bold;
-        margin-top: 20px;
-        border-radius: 10px;
-        border: 1px solid $cSrv2;
-        background: $cSrv2;
-        color: $cSrv1;
-        transition: 300ms all;
-        padding-left: 13px;
-        padding-right: 13px;
-        
-    }.bl1-click:hover{
-        background: $cSrv1;
-        color: #fff;
-        border: 1px solid $cSrv1;
-    }
-    display: none;
 }
-@media(max-width:1399px){
-    .u-list{
-        display: none;
+@media (max-width:749px){
+    .bloque1{
+        height: 460px;
+        .bloq-bl1{
+            height: auto;
+            .u-list{
+                padding-top: 105px;
+                .bloq-bl1-title{
+                    font-size: 45px;
+                }
+                .u-li-parr{
+                    font-size: 19px;
+                    height: 40px;
+                }
+                .bl1-click{
+                    font-size: 18px;
+                    padding: 6px 9px;
+                }
+            }
+        }
     }
-    .u-list-m{
-        display: block;
+}
+@media(max-width:565px){
+    .bloque1{
+        height: 520px;
     }
 }

@@ -60,3 +60,38 @@
         }
     }
 }
+@media(max-width:813px){
+    .bloque2{
+        .blq2-txt{
+            font-size: 33px;
+        }
+    }
+    
+}
+
+@media(max-width:592px){
+    .bloque2{
+        .blq2-txt{
+            margin-top: 40px;
+            font-size: 25px;
+        }
+        .blq2-video{
+            margin-top: 50px;
+            width:400px;
+            height: 240px;
+        }
+    }
+}
+@media(max-width:456px){
+    .bloque2{
+        .blq2-txt{
+            margin-top: 60px;
+            font-size: 20px;
+        }
+        .blq2-video{
+            margin-top: 70px;
+            width: 350px;
+            height: 210px;
+        }
+    }
+}

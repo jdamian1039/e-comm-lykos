@@ -96,7 +96,6 @@ header{
         width:100%;
         max-width: 1134px;
         margin: 0 0;
-        height: 100px;
     }
     .sticky{
       display:block;
@@ -150,6 +149,7 @@ header{
       color:$cSrv1;
       border: none;
       border-radius: 9px;
+      font-size: 17px;
     }
   
     .nav-menu_visible {
@@ -159,4 +159,22 @@ header{
     .nav-toggle:focus:not(:focus-visible) {
       outline: none;
     }
+}
+
+@media (max-width:946px){
+  .sticky{
+    font-size: 15px;
+    margin: 0 0 15px;
   }
+  .nav-toggle{
+    font-size: 17px;
+    height: 45px;
+    padding: 0 30px;
+  }
+  .logo{
+    height: auto;
+    img{
+      width: 140px;
+    }
+  }
+}

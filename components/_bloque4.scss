@@ -98,6 +98,9 @@ h1{
             }
         }
     }
+    #bq4-process{
+        font-size: 60px;
+    }
 }
 @media (max-width:982px){
     .bloque4{
@@ -113,6 +116,18 @@ h1{
                 .bq4-num{
                     margin-left: 27%;
                 }
+                .bq4-contrato{
+                    width: 80px;
+                }
+                #pp{
+                    width: 93px;
+                }
+                .bq4-contrato:hover{
+                    width: 98px;
+                }
+                #pp:hover{
+                    width: 110px;
+                }
             }
         }
     }
@@ -126,5 +141,35 @@ h1{
 @media (max-width:606px){
     #bq4-process{
         font-size: 50px;
+    }
+}
+@media(max-width:515px){
+    .bloque4{
+        .bq4-body{
+            .bq4-contr{
+                margin-bottom: 25px;
+                h3{
+                    font-size: 16px;
+                }
+                p{
+                    font-size: 10px;
+                }
+                .bq4-contrato{
+                    width: 70px;
+                }
+                #pp{
+                    width: 83px;
+                }
+                .bq4-contrato:hover{
+                    width: 88px;
+                }
+                #pp:hover{
+                    width: 100px;
+                }
+            }
+        }
+    }
+    #bq4-process{
+        font-size: 45px;
     }
 }

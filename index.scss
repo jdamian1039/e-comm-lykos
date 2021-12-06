@@ -30,8 +30,7 @@ body{
     background-image: url("img/WhatsApp\ Video\ 2021-10-22\ at\ 13.46.07.gif");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position-y: 100%;
-    background-size: 100%;
+    background-size: 1520px;
     .container-l{
         max-width:1550px;
         width: 100%;
@@ -60,4 +59,9 @@ body{
     position:absolute;
     opacity: 75%;
     z-index: -1;
+}
+@media (max-width:1134px){
+    body{
+        background-position-x: 50%;
+    }
 }

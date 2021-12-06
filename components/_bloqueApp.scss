@@ -17,6 +17,14 @@
   .bloqueAzul{
     @include block(100%,hidden,auto,$cSrv1,#fff);
   }
+  .bloqueCustomer{
+    @include block;
+    h1{
+      img{
+        width:260px;
+      }
+    }
+  }
   .contenedor{
     max-width:1550px;
     display: inline-flex;
@@ -90,10 +98,15 @@
   #espacio4{
     margin-top: 7%;
   }
-  #espacio5{
+  .espacio5{
     margin-top:3%;
-    img{
-      width:15%;
+    h1{
+      img{
+        width:220px;
+      }
+    }
+    p{
+      font-size: 30px;
     }
   }
 
@@ -304,6 +317,16 @@
       }
     }
   }
+  .espacio5{
+    h1{
+      img{
+        width: 190px;
+      }
+    }
+    p{
+      font-size: 25px;
+    }
+  }
 }
 @media (max-width:913px){
   .app-test{
@@ -369,6 +392,16 @@
   .seil{
     img{
       width: 340px;
+    }
+  }
+  .espacio5{
+    h1{
+      img{
+        width: 160px;
+      }
+    }
+    p{
+      font-size: 20px;
     }
   }
 }
@@ -450,7 +483,37 @@
   }
   .seil{
     img{
-      width: 300px;
+      width: 250px;
+    }
+  }
+}
+@media(max-width:659px){
+  .bloqueTitulo{
+    margin-top: 30px;
+  }
+  .bloqueTxtCentro{
+    width: 100%;
+    margin: auto;
+    p{
+      width:60%;
+      margin-left: 24%;
+      
+    }
+    .block{
+      display: block;
+    }
+    .unblock{
+      display: none;
+    }
+  }
+  .espacio5{
+    h1{
+      img{
+        width: 130px;
+      }
+    }
+    p{
+      font-size: 17px;
     }
   }
 }
@@ -470,20 +533,37 @@
       }
     }
   }
-  .bloqueTxtCentro{
-    width: 100%;
-    margin: auto;
-    p{
-      width:60%;
-      margin-left: 24%;
-      
-    }
-    .block{
-      display: block;
-    }
-    .unblock{
-      display: none;
+}
+@media(max-width:554px){
+  .app-test{
+    .app-content{
+      .app-text{
+        .tituloApp{
+          font-size: 29px;
+        }
+      }
+      .small-text{
+        .bloqueTxt{
+          font-size: 20px;
+        }
+        .centrado{
+          .bt-Azul{
+            padding-top: 3px;
+            padding-bottom: 3px;
+            font-size: 20px;
+            padding-left: 9px;
+            padding-right: 9px;
+          }
+        }
+      }
     }
   }
-  
+}
+@media(max-width:457px){
+  .bloqueTxtCentro{
+    p{
+      width: 100%;
+      margin-left: 70px;
+    }
+  }
 }

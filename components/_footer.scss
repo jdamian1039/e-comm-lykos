@@ -13,8 +13,7 @@ footer{
             text-align: right;
             margin-left: 0px;
             margin-right: 0px;
-            display: grid;
-            grid-template-rows: 1fr 4fr;
+            margin-top: 20%;
             h1{
                 font-size: 30px; 
                 text-align: right;
@@ -27,11 +26,32 @@ footer{
                 font-size: 26px;
             }
             input{
-                width:300px;
+                width:250px;
                 border-radius: 5px;
                 padding-left: 5px;
                 background: $cSrv2;
                 color:$cSrv1;
+                border: $cSrv2;
+                font-weight: bold;
+                padding-top: 3px;
+                padding-bottom: 3px;
+            }
+            .enter-email{
+                width: 100px;
+                margin-left: 6px;
+                border-radius: 5px;
+                background: $cSrv2;
+                color:$cSrv1;
+                font-weight: bolder;
+                border: $cSrv2;
+                transition: 300ms all;
+                padding-top: 4px;
+                padding-bottom: 4px;
+            }
+            .enter-email:hover{
+                background: $cSrv1;
+                color:#fff;
+                border: $cSrv1;
             }
             .media{
                 text-align: right;
@@ -40,12 +60,12 @@ footer{
                     margin-left: 0px;
                     margin-right: 0px;
                     img{
-                        width:65px;
+                        width:63px;
                     }
                 }
                 a:hover{
                     img{
-                        width:85px;
+                        width:75px;
                         transition: 300ms all;
                     }
                 }
@@ -55,8 +75,9 @@ footer{
             text-align: left;
             margin-left: 0px;
             margin-right: 0px;
+            margin-top: 33%;
             display: grid;
-            grid-template-rows: 4fr 2fr 2fr;
+            grid-template-rows: 1fr 1fr;
             p{
                 font-size: 17px;
                 font-weight: bold;
@@ -72,14 +93,29 @@ footer{
     }
 }
 .logos{
+    width:100%;
+    margin-top: 10%;
     margin-left: 0px;
     img{
-        height:40px;
         padding: {
             left:18px;
             right:7px;
         }
         border-right: 3px solid #fff;
+    }
+    .one{
+        width: 120px; //19%
+    }
+    .pcm{
+        width: 155px; //24%
+    }
+    .lykse{
+        width: 187px; //28%
+    }
+    .seil{
+        width: 110px; //17%
+        padding-top: 1%;
+        padding-bottom: 1%;
     }
 }
 
@@ -101,5 +137,294 @@ footer{
     p{
         padding-bottom: 25px;
         margin-bottom: 0px;
+    }
+}
+
+
+@media(max-width:1297px){
+    footer{
+        .contenedor{
+            .info-general{
+                margin-top: 35%;
+            }
+        }
+    }
+}
+@media(max-width:1257px){
+    .logos{
+        .one{
+            width: 100px;
+        }
+        .pcm{
+            width: 130px;
+        }
+        .lykse{
+            width: 150px;
+        }
+        .seil{
+            width:95px;
+        }
+    }
+}
+@media(max-width:1137px){
+    footer{
+        .contenedor{
+            .novedades{
+                h1{
+                    font-size: 23px;
+                }
+                p{
+                    font-size:19px;
+                }
+            }
+            .info-general{
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+    }  
+}
+@media(max-width:1049px){
+    .logos{
+        img{
+            padding-left: 6px;
+            padding-right: 2px;
+        }
+        .one{
+            width:90px;
+        }
+        .pcm{
+            width: 110px;
+        }
+        .lykse{
+            width: 130px;
+        }
+        .seil{
+            width:90px;
+        }
+    }
+}
+@media(max-width:1013px){
+    .logos{
+        margin-top: 8%;
+    }
+
+}
+@media(max-width:930px){
+    .logos{
+        margin-top: 10%;
+        .one{
+            width: 70px; //19%
+        }
+        .pcm{
+            width: 105px; //24%
+        }
+        .lykse{
+            width: 137px; //28%
+        }
+        .seil{
+            width: 70px; //17%
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
+    }
+    footer{
+        .contenedor{
+            .novedades{
+                input{
+                    width: 200px;
+                }
+                .enter-email{
+                    width: 80px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:916px){
+    footer{
+        .contenedor{
+            .info-general{
+                margin-top: 32%;
+            }
+            .novedades{
+                h1{
+                    font-size: 23px;
+                }
+                p{
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+    .logos{
+        margin-top: 12%;
+    } 
+}
+@media(max-width:849px){
+    footer{
+        .contenedor{
+            .novedades{
+                h1{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .logos{
+        .one{
+            width: 60px; //19%
+        }
+        .pcm{
+            width: 95px; //24%
+        }
+        .lykse{
+            width: 127px; //28%
+        }
+        .seil{
+            width: 60px; //17%
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
+    }
+}
+@media(max-width:769px){
+    footer{
+        .contenedor{
+            display: block;
+            .info-general{
+                margin-top: 0;
+                padding-top: 10%;
+                p{
+                    font-size: 16px;
+                }
+            }
+            .novedades{
+                margin-top: 10%;
+                margin-right: 0%;
+                h1{
+                    font-size: 28px;
+                    padding-right: 10%;
+                }
+                p{
+                    font-size: 21px;
+                    padding-right: 10%;
+                }
+                .media{
+                    padding:10px 0;
+                    text-align: center;
+                }
+                input{
+                    width: 250px;
+                }
+                .enter-email{
+                    width: 100px;
+                }
+            }
+        }
+    }
+    .logos{
+        text-align: center;
+        margin-top: 6%;
+        img{
+            padding-left: 18px;
+        }
+        img:first-child{
+            padding-left: 0px;
+        }
+        .one{
+            width:100px
+        }
+        .pcm{
+            width: 150px;
+        }
+        .lykse{
+            width: 175px;
+        }
+        .seil{
+            width:115px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    }
+    .textplace{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media(max-width:594px){
+    footer{
+        .contenedor{
+            .info-general{
+                p{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    .logos{
+        .one{
+            width: 80px;
+        }
+        .pcm{
+            width: 130px;
+        }
+        .seil{
+            width: 95px;
+        }
+        .lykse{
+            width: 155px;
+        }
+    }
+}
+@media(max-width:569px){
+    footer{
+        .contenedor{
+            .novedades{
+                margin-top: 4%;
+                h1{
+                    font-size: 23px;
+                }
+                p{
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:509px){
+    .logos{
+        img{
+            padding-left: 10px;
+        }
+        .one{
+            width: 60px;
+        }
+        .pcm{
+            width: 110px;
+        }
+        .seil{
+            width: 75px;
+        }
+        .lykse{
+            width: 135px;
+        }
+    }
+}
+@media(max-width:422px){
+    .logos{
+        .one{
+            width: 60px;
+        }
+        .pcm{
+            width: 90px;
+        }
+        .seil{
+            width: 55px;
+        }
+        .lykse{
+            width: 115px;
+        }
     }
 }

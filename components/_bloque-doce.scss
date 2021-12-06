@@ -246,3 +246,34 @@
     padding-left: 20%;
   }
 }
+@media(max-width:575px){
+  .info-small{
+    padding-left: 15%;
+  }
+  #guardia{
+    img{
+      width: 340px;
+    }
+    div{
+      button{
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+}
+@media(max-width:490px){
+  .info-small{
+    padding-left: 10%;
+    .textUp{
+      font-size: 15px;
+    }
+    .textMid{
+      font-size: 16px;
+    }
+    .textDown{
+      font-size: 17px;
+    }
+  }
+}
