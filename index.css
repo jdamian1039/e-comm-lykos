@@ -2243,6 +2243,12 @@ h1 {
   height: 640px;
 }
 
+@media (max-width: 1096px) {
+  .blq2-txt-v {
+    font-size: 38px;
+  }
+}
+
 .questions {
   background: #fff;
   width: 100%;
